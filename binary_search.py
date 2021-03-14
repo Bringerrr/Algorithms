@@ -1,12 +1,4 @@
-def guess_number(number):
-    intToGuess = 75
-    if int(number) == intToGuess:
-        return True
-    elif int(number) > int(intToGuess):
-        hot = 'more'
-    else:
-        hot = 'leser'
-    return hot
+from utils import guess_number
 
 
 def binary_search(func, totalItems, mid=0, low=0, high=0, tryies=0):
@@ -28,4 +20,4 @@ def binary_search(func, totalItems, mid=0, low=0, high=0, tryies=0):
         print('searching item is', mid, 'total tryies', tryies)
 
 
-binary_search(guess_number, 100)
+binary_search(guess_number.guess_number, 100)
